@@ -1,0 +1,95 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  /* color: white; */
+}
+#page1 {
+  width: 100%;
+  height: 100vh;
+  background-color: yellowgreen;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  padding-top: 5%;
+}
+#page2 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(158, 233, 10);
+}
+#page3 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(170, 255, 0);
+}
+
+#point {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  mix-blend-mode: difference;
+}
+
+#flowers img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  background: yellowgreen;
+}
+#lastnav {
+  display: flex;
+  gap: 10px;
+}
+nav input {
+  padding: 10px 80px;
+  border: 1px solid black;
+  border-radius: 20px;
+  position: absolute;
+  left: 30%;
+  z-index: 99;
+}
+
+#overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.183);
+  position: fixed;
+  top: 0%;
+  display: none;
+}
+
+#searchpannel {
+  width: 50%;
+  min-height: 100px;
+  background-color: white;
+  position: absolute;
+  left: 23%;
+  z-index: 9;
+  border-radius: 20px;
+  padding: 10px;
+  display: none;
+}
